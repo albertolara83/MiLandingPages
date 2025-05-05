@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #2980b9, #6dd5fa);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+
+h2 {
+    font-size: 3.9em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* blanco si está sobre fondo azul */
+    font-size: 28px;
+}
+
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.botones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+}
+
+.botones button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.botones button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.botones button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+
+@media (max-width: 600px) {
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones button {
+        width: 100%;
+    }
+}

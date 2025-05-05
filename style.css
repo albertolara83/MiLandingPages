@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("img/fondo3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+nav{
+    height: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding:30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    z-index: 1000;
+}
+header h1{
+    color: white;
+    font-size: 2.7em;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+}
+header h1:hover{
+    color: rgba(219, 222, 224, 0.918);
+    background: #06084dec;
+    transition: 1s;
+}
+header .menu li img{
+    width: 22px;
+    height: 22px;
+    
+}
+ul{
+    list-style: none;
+}
+
+.menu li  a {
+    background-color: white;
+    color: rgb(18, 9, 68);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s;
+    font-size: 0.9em;
+}
+.menu li  a:hover{
+    background-color: rgb(49, 57, 161);
+    color: white;
+}
+.menu > li{
+    float: left; 
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+    display: block;
+}
+.menu .submenu li{
+    position: relative;
+    display: block;
+}
+.imagen-encima{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right:50px;
+    padding-bottom: 100px;
+
+}
+.caja{
+    text-align: center;
+    padding-right: 50px;
+}
+.caja h2{
+    font-size: 3.7em;
+    text-transform: uppercase;
+    padding: 10px 10px 50px 15px;
+    
+}
+.caja h2 span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    color: white;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+.caja h3{
+    font-size: 2.4em;
+    text-transform: uppercase;
+    color: rgb(47, 202, 223);
+    padding-bottom: 20px;
+    padding-top: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.8;
+}
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+
+}
+.redesSociales li a{
+    color: white;
+    font-size: 2.5em;
+    transition: 0.2s;
+   
+
+}
+.redesSociales li a img{
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+.redesSociales li:hover a{
+    color: rgb(55, 47, 212);
+}
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    margin-bottom: 15px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"Open Sans", sans-serif
+    
+}
+.copyright p{
+    color:white;
+    text-align: center;
+    margin-left: 100px;
+    font-family:"Open Sans", sans-serif
+}
+
+
+
+
+/*header .menu{
+    position: relative;
+    display: flex;
+    padding-left: 400px;
+    padding-top:-20px;
+    border-color: rgb(234, 239, 243);
+    
+    
+}
+
+.submenu li:hover{
+    display: block;
+}
+header .menu li{
+margin-left: 30px;
+}
+header .menu li img{
+    width: 22px;
+    height: 22px;
+    
+}
+/*header .menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+}
+header .menu li a:hover{
+    color: darkslateblue;
+  background-color: white;
+    
+}
+.imagen-encima{
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right:600px;
+    padding-bottom: 100px;
+
+}
+/*header .menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}*/
+
+    
+    
