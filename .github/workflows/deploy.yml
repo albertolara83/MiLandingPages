@@ -1,0 +1,30 @@
+name: CI/CD DAWEServidor
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Comprobar index.html (CI)
+        run: |
+          if [ ! -f index.html ]; then
+            echo "ERROR: index.html no está en la raíz"
+            exit 1
+          fi
+
+      - name: Mostrar estructura del proyecto
+        run: ls -R
+
+      - name: Desplegar en GitHub Pages (CD)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
